@@ -9,3 +9,6 @@ step:
   - go build 
   - go test
   - echo "hello"
+  when: 
+    branch:
+    - master
