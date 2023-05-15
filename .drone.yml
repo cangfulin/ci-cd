@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-type: exec
+type: docker
 name: deploy-master
 
 platform:
@@ -26,9 +26,3 @@ steps:
   - pm2 stop fix.moe
   - pm2 delete fix.moe
   - pm2 start npm --name fix.moe -- run start
-
-trigger:
-  branch:
-  - master
-  event:
-  - push
