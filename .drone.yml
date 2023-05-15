@@ -19,3 +19,4 @@ step:
   - go build 
   - go test
   - echo "123"
+  - echo "456"
