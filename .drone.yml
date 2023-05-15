@@ -12,3 +12,10 @@ step:
   when: 
     branch:
     - master
+    
+- name: backend
+  images: golang:1.13-alpine
+  commands:
+  - go build 
+  - go test
+  - echo "123"
