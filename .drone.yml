@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: add-server-ci-4
+name: add-server-ci
 
 platform:
   os: linux
