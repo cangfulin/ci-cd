@@ -51,7 +51,7 @@ steps:
     SSH_KEY:
       from_secret: ssh_key
     IMAGES: vincentfulin/ci-cd
-    IMAGE_TAG: ${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA:0:}
+    IMAGE_TAG: ${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA:0:40}
     MANIFEST_HOST: github.com
     MANIFEST_USER: cangfulin
     MANIFEST_USER_EMAIL: minghsu0107@gmail.com
