@@ -26,8 +26,8 @@ trigger:
   event:
     include:
     - tag
-#     - push
-#     - pull_request
+    - push
+    - pull_request
 
 steps:
 - name: test
@@ -40,7 +40,7 @@ steps:
 - name: build-image
   <<: *x-build-docker-image
   settings:
-    repo: vincentfulin/ci-cd
+    repo: vincentfulin/ci-cd-${DRONE_REPO_NAME}
     dockerfile: src/Dockerfile
     context: src
   depends_on:
